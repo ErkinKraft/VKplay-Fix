@@ -1,0 +1,1 @@
+pyinstaller vkplayfix.py --onefile --hidden-import subprocess --hidden-import ctypes --hidden-import os --hidden-import time
