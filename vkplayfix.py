@@ -1,7 +1,7 @@
 import subprocess
 import ctypes, os
 import time
-print('VKplay net Fix 1.0\n')
+print('VKplay net Fix 1.1\n')
 print('Github > https://github.com/ErkinKraft\n')
 try:
     def is_admin():
@@ -24,7 +24,11 @@ try:
     except:
         print('Network interface detection error')
         interface_name = input('Please enter the name of the network interface manually > ')
-
+    if interface_name == '':
+        print('Network interface detection error')
+        interface_name = input('Please enter the name of the network interface manually > ')
+    else:
+        pass
     dns_servers = ["8.8.8.8", "8.8.4.4"]
 
     for server in dns_servers:
